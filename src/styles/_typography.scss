@@ -2,3 +2,12 @@ h1,
 p {
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+  color: dodgerblue;
+
+  &:focus {
+    outline: 0.2rem solid dodgerblue;
+  }
+}
