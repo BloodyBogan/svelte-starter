@@ -67,7 +67,7 @@ const config: Configuration = {
 	output: {
 		path: path.resolve(__dirname, 'public/build'),
 		publicPath: '/build/',
-		filename: '[name].js',
+		filename: '[name].min.js',
 		chunkFilename: '[name].[id].js'
 	},
 	module: {
@@ -162,7 +162,7 @@ const config: Configuration = {
 	target: isDevelopment ? 'web' : 'browserslist',
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: '[name].css'
+			filename: '[name].min.css'
 		})
 	],
 	devtool: isProduction && !sourceMapsInProduction ? false : 'source-map',

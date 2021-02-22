@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: var(--ff-main);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62.5%;
+  line-height: 1.618;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6em;
+  color: $clr-dark-900;
+  background: $clr-light-100;
+}
+
+section {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
